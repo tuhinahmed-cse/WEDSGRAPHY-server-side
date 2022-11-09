@@ -20,6 +20,7 @@ async function run() {
     try 
     {
         const serviceCollection = client.db('wedsgraphy').collection('services');
+        const reviewCollection = client.db('wedsgraphy').collection('reviews');
 
 
         app.get('/services', async (req, res) => {
